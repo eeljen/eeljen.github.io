@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Arendt, Hannah</title>
+
+	<meta charset="utf-8"/>
+  <style type="text/css">
+html {
+    /* the line height value of 1.9 is fixed for a line height multiple of 1.4 in the text view */
+    font: normal 106.2%/1.9 serif;
+}
+
+body {
+    font-family: 'Courier Prime', Helvetica, Georgia, serif;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    overflow:hidden;
+    background-color: #f2f2f2;
+    color: #3c3c3c;
+}
+
+/**
+ *
+    Wrappers
+ *
+ */
+
+#wrapper {
+    position: fixed;
+    width: 99.9%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 1.0em;
+}
+
+#wrapper::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+    -webkit-transition: all .45s ease-in;
+    position: relative;
+}
+#wrapper::-webkit-scrollbar-button:start:decrement, #wrapper::-webkit-scrollbar-button:end:increment {
+    height: 0px;
+    display: block;
+    background-color: transparent;
+}
+#wrapper::-webkit-scrollbar-track-piece {
+    background-color:
+    transparent;
+    -webkit-border-radius: 6px;
+}
+#wrapper::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: #c8c8c8;
+    -webkit-border-radius: 6px;
+    -webkit-transition: all .45s ease-in;
+}
+
+#content {
+    width: 610px;
+    margin: 0 auto 0 auto;
+    padding: 30px 0 30px 0;
+}
+
+/**
+ *
+    Headings
+ *
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    margin: 0.5rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    margin: 0.5rem 0;
+}
+
+h1, 
+h2, 
+h3 { margin-bottom: 1rem; }
+
+h1 { font-size: 2.75rem; }
+h2 { font-size: 2.25rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.00rem; }
+h6 { font-size: 0.85rem; }
+
+/**
+ *
+	Paragraphs
+ *
+ */
+
+p {
+	margin: 0 0 1.5em;
+}
+
+/**
+ *
+    Block quotes
+ *
+ */
+
+blockquote {
+    margin: 0 0 1.5em;
+    width: 96%;
+    padding: 0 10px;
+    border-left: 3px solid #ddd;
+    color: #777;
+}
+
+/**
+ *
+	Code Blocks
+ *
+ */
+
+pre code {
+	word-wrap: normal;
+	white-space: pre-wrap;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+}
+
+pre {
+	white-space: pre-wrap;
+    width: 96%;
+    margin-bottom: 24px;
+    overflow: hidden;
+    padding: 3px 10px;
+    -webkit-border-radius: 3px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+
+code {
+	white-space: nowrap;
+	font-family: monospace;
+    padding: 2px;
+    -webkit-border-radius: 3px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+
+small {
+	font-size: 65%;
+}
+
+/**
+ *
+    Dictionary Definition
+ *
+ */
+
+dt {
+	display: inline;
+    font-weight:bold;
+}
+
+dd {
+	display: block;
+}
+
+/**
+ *
+    Anchors
+ *
+ */
+
+a {
+    color: #308bd8;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/**
+ *
+    Horizontal rules
+ *
+ */
+
+hr {
+    width: 100%;
+    margin: 3em auto;
+    border: 0;
+    color: #eee;
+    background-color: #ccc;
+    height: 1px;
+    -webkit-box-shadow:0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+/**
+ *
+    Lists
+ *
+ */
+
+ol, ul {
+    list-style-position: outside;
+    padding-left: 0;
+    margin-left: 1.5em;
+}
+
+ol li, ul li {
+    text-align: -webkit-match-parent;
+}
+
+li p {
+    margin: 0.5em 0 0.5em;
+}
+
+ol ol, ol ul, ul ul, ul ol {
+    padding-left: 1.5em;
+}
+
+/**
+ *
+    Tables
+ *
+ */
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-spacing: 0;
+}
+
+table th {
+    padding: 3px 10px;
+    background-color: #eee;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+table tr {
+}
+
+table td {
+    padding: 3px 10px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+/**
+ *
+    Images
+ *
+ */
+
+img {
+    border: none;
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+}
+
+/**
+ *
+    Marks
+ *
+ */
+
+mark {
+    background: #fefec0;
+    padding:1px 3px;
+}
+
+/**
+ *
+    Footnotes
+ *
+ */
+.footnote {
+    font-size: 0.8rem;
+    vertical-align: super;
+}
+.footnotes ol {
+    font-weight: bold;
+}
+.footnotes ol li {
+    text-align: -webkit-match-parent;
+}
+
+.footnotes ol li p {
+    font-weight: normal;
+}
+
+/**
+ *
+    Figures and Captions
+ *
+ */
+caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+figure {
+    display: block;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+/**
+ *
+    Custom classes
+ *
+ */
+
+.shadow {
+    -webkit-box-shadow: 0 2px 4px #999;
+}
+
+.source {
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    margin: -40px auto;
+}
+#wrapper {
+    width: 99.9%;
+}
+#content {
+    width: 610px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile support */
+@media only screen and (max-device-width:1024px) {
+    html {
+        overflow: auto;
+    }
+
+    #wrapper {
+        overflow: auto;
+        position: relative;
+    }
+}@media print {
+/* Printing support.
+ * Override all printing colors to match the Light theme.
+ */
+img, pre, blockquote, table, figure {
+    page-break-inside: avoid;
+}
+body {
+    background-color:#fff;
+}
+#wrapper {
+    position: static;
+    overflow: hidden;
+    color: #000;
+    width: 100%;
+    margin: 0 auto;
+}
+.footnotes {
+    page-break-before: always;
+}
+#content {
+    margin: 0 auto;
+    padding: 0;
+    width: 98%;
+}
+#top-fader, #bottom-fader {
+    display: none;
+}
+hr {
+    color:#ddd;
+    background-color:#ddd;
+    -webkit-box-shadow:0px 1px 0px #ddd;
+}
+pre {
+    background-color:transparent;
+    border: 1px solid #ddd;
+}
+code {
+    background-color:transparent;
+    border: 1px solid #ddd;
+}
+blockquote {
+    border-left: 3px solid #ddd;
+    color: #000;
+}
+ol {
+    /*
+     * Override the list style when printing to ensure list
+     * markers won't get cut.
+     */
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+}
+table {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+table th {
+    background-color:transparent;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+table td {
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+mark {
+    background:transparent;
+    color: #000;
+}
+.source {
+    color: #000;
+}
+}
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="content">
+<h1>Hannah Arendt</h1>
+
+<p><link href="file:///Users/Elias/Documents/CSS/bw.css" rel="stylesheet"></p>
+
+<p>° 1906, Hannover &#8211; † 1975, New York.</p>
+
+<p>Het BBC Radio 4 programma <em>In our time</em> spendeerde een aflevering aan Hannah Arendt in februari 2017. Zoals steeds nodigt Melvyn Bragg enkele interessante academici uit.<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a><br/>
+  Een reden om één en ander over haar op te zoeken en hieronder één en ander aan te vullen.</p>
+
+<p>Arendt schreef over een breed gamma aan onderwerpen: liefde &amp; Sint Augustinus, totalitarisme, geestesleven - steeds verbonden door een focus op politiek.<br/>
+  Ze verzette zich tegen de noemer &#8216;politiek filosoof&#8217;, omdat het een vijandigheid ten aanzien van politiek impliceert in de bredere filosofie.<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> Binnen het politieke spectrum is Arendt evenmin eenvoudig te plaatsen.</p>
+
+<p>Heidegger leerde Arendt dat denken een manier was van <em>zijn</em>, van mens zijn. Volgens Lindsey Stonebridge in <em>In Our Time</em>.<a href="#fn:1" title="see footnote" class="footnote">[1]</a> </p>
+
+<blockquote>
+<p>&#8220;It means that how you think, is how you exist. Thinking about your existence. (…) You establish yourself in the world through thinking and through language.&#8221;</p>
+</blockquote>
+
+<p>Dit brengt het belang van <em>taal</em> met zich mee, wat voor zowel Heidegger als Arendt cruciaal is om <em>iemand te zijn.</em> </p>
+
+<blockquote>
+<p>&#8220;Well how else can we be? As soon as you think about being, you&#8217;re in a word, you&#8217;re using words. Arendt would always come back to the things she borrowed from Socrates and from Heidegger, which is the two in one dialogue we always have in our heads. When we&#8217;re thinking, we&#8217;re having a conversation in our heads all the time. And that, she says, is a way of being in the world. So rather than looking for big abstract concepts, rather than looking for a ground, she&#8217;s saying we are constantly working out what it means to be a person - inwards, in thought, in thinking.&#8221;</p>
+</blockquote>
+
+<p>Stonebridge gaat verder over de monoloog van Shakespeare&#8217;s Richard waar Arendt graag naar verwees: in die monoloog ondervraagt Richard zichzelf over de moraliteit van zijn handelen. Wie niet denkt, geen stem heeft, zal zo&#8217;n conversatie niet eens hebben. </p>
+
+<h2>Een beknopte biografie</h2>
+
+<p>Hannah Arendt werd geboren als kind van seculiere joodse ouders. Volgens Arendt werd ze pas met het woord &#8216;jood&#8217; geconfronteerd door anti-semitische opmerkingen van kinderen op straat.
+ Arendt studeerde reeds vanaf jongs af aan Grieks, een interesse die ze haar leven lang zou bewaren. In 1929 dient ze bij Karl Jaspers te Heidelberg haar proefschrift in over het liefdesbegrip bij Augustinus.
+  In Berlijn werd Arendt geconfronteerd met de groeiende nazi-beweging en bijbehorend antisemitisme.</p>
+
+<p>Toen ze in Marburg les kreeg van Heidegger ontwikkelde zich een korte maar intense romantische affaire. In 1926 verhuisde ze echter naar Heidelberg om daar in 1929 haar proefschrift af te leggen onder Karl Jaspers. Toen bekend werd dat Heidegger op Nationaal Socialistische bijeenkomsten sprak in 1932, bleek Arendt daar erg van aangedaan.<br/>
+  Haar Joodse afkomst verhinderde de mogelijkheid tot habilitatie. Arendt voerde een tijd onderzoek naar antisemitisme tot ze in 1933 kort werd opgesloten na arrestatie door de Gestapo.<br/>
+  In 1933 werkte Arendt kort voor de Volkerenbond in Genève, nadat ze Duitsland ontvluchtte. Niet veel later kwam ze in Parijs terecht, waar ze bevriend geraakte met Walter Benjamin, een neef van haar eerste man.<br/>
+  In 1937 verloor ze haar Duits staatsburgerschap. Later, in 1940, bij het begin van de Duitse bezetting, werden buitenlandse joden in Frankrijk opgesloten in kampen, waardoor Arendt enkele weken gevangen zat in Camp Gurs als <em>vijandelijke vreemdeling</em>. </p>
+
+<p>In 1941 vluchtte ze samen met haar man en moeder via Portugal naar de Verenigde Staten, met behulp van onwettig door een Amerikaans diplomaat verstrekte visas. In New York maakte ze deel uit van de intellectuele kring rond de <em>Partisan Review</em> en schreef Arendt enkele jaren een vaste column in Duitstalig Joods nieuwsblad <em>Aufbau</em>.<br/>
+  In de Verenigde Staten was Arendt zich uitermate bewust van haar status als statenloze vluchteling, onder andere verwerkt in haar essay <em>We refugees</em>. In haar denken en zijn nam ze de positie adopteerde ze haar positie als <em>pariah</em>.<br/>
+  Gedurende de tweede wereldoorlog, werkte Arendt voor een Zionistische organisatie die duizenden joodse kinderen onder wist te brengen in het Britse deel van Palestina.
+  Pas in 1950 verwierf ze de Amerikaanse nationaliteit. In dat jaar kwam ze ook opnieuw in contact met Heidegger, die ze later publiek verdedigde voor diens banden met het Nationaal Socialistische regime, volgens haar te wijten aan naïviteit.<br/>
+  In 1959 werd ze de eerste vrouwelijke <em>lecturer</em> aan Princeton. Begin jaren &#8217;60 gaf ze eveneens les aan de <em>University of Chicago</em>, <em>The New School</em>, en <em>Yale University</em>.
+  In 1961 bracht ze voor <em>The New Yorker</em> verslag uit van het process tegen Adolf Eichmann te Jeruzalem, waar ze over de &#8216;banaliteit van het kwaad&#8217; sprak, wat tot groot misbegrip en controverse leidde binnen de Joodse gemeenschap.</p>
+
+<h2>Belangrijke werken</h2>
+
+<h3>1951, <em>The Origins of Totalitarianism</em></h3>
+
+<p>Geparafraseerd naar uitleg van Robert Eaglestone in <em>In Our Time</em>.<a href="#fn:1" title="see footnote" class="footnote">[1]</a></p>
+
+<p>Een zoektocht naar de kern van het totalitarisme, die volgens Arendt twee elementen omvat: ideologie en terreur.</p>
+
+<p>Het verdwijnen van sociale banden en atomiseren van individuen opent de deur voor een grote leider die de ontstane leemte opvult met een helder antwoord. Resultaat is echter dat er slechts één manier van denken toegelaten wordt.
+  Deze ideologie kan zo sterk zijn, dat mensen afstand nemen wanneer wat de partij zegt eigen ervaring tegenspreekt. Arendt noemt dit <em>rule from within</em>, of een kolonisering van de geest, wat zelf denken verhindert of zelfs voorkomt dat mensen hun eigen ervaringen beleven.</p>
+
+<p>Van Aristoteles neemt Arendt de idee dat <em>mens zijn</em> bestaat uit twee delen: een biologisch &amp; lichamelijke dimensie, en een sociale-politieke dimensie of <em>bios</em>. Totalitaire terreur trekt deze elementen van elkaar los: naam, rechten en identiteit worden ontvreemd, waardoor enkel het lichaam overblijft.<br/>
+ Eenmaal tot het lichamelijke gereduceerd, wordt de persoon overbodig, waarna het vermoorden probleemloos wordt.</p>
+
+<p>Het totalitaire regime wordt mogelijk gemaakt door tal van andere ontstaansvoorwaarden, samen voorkomend in een soort van <em>perfect storm.</em></p>
+
+<h3>1958, <em>The Human Condition</em></h3>
+
+<h2>Bronnen &amp; info</h2>
+
+<ul>
+<li><p><a href="https://en.wikipedia.org/wiki/Hannah_Arendt">Wikipedia</a></p></li>
+<li><p><a href="https://plato.stanford.edu/entries/arendt/">Stanford Encyclopedia of Philosophy</a></p></li>
+<li><p>Over de Arendt&#8217;s relatie met Heidegger (en andere zaken): <em>Beware of Pity</em> in <a href="http://www.newyorker.com/magazine/2009/01/12/beware-of-pity">The New Yorker</a>.</p></li>
+</ul>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p>Aflevering van 2 februari 2017, online op <a href="http://www.bbc.co.uk/programmes/b08c2ljg">bbc.co.uk</a>. <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:2">
+<p>(??) Volgens BBC uitzending, andere reden via Wikipedia: <em>&#8220;Though often described as a philosopher, she rejected that label on the grounds that philosophy is concerned with &#8221;man in the singular&#8220; and instead described herself as a political theorist because her work centers on the fact that &#8221;men, not Man, live on the earth and inhabit the world.&quot;</em> <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+    </div>
+  </div> <!-- End wrapper -->
+</body>
+</html>
