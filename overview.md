@@ -1,8 +1,6 @@
 ## The Overview Effect. Over leven op een blauwe bol en een nieuwe institutie.
 <link href="file:///Users/Elias/Documents/CSS/bw.css" rel="stylesheet"></link>
 
-<img src="http://www.overviewinstitute.org/images/overviewgallery/earthfromspace.jpg" width="600">
-
 Inspiratie en aantekeningen bij de documentaire *The Overview* van Planetary Collective, online op [vimeo.com](vimeo.com/55073825), 19 min.  
     
 Toen we de eerste astronauten de ruimte in schoten, waren alle ogen naar buiten gericht. Op onze meest nabije satelliet, de maan, en al wat daar achter ligt. Volledig onverwacht was dan ook dat die kosmische reizen onze perceptie van de aarde grondig zouden wijzigen, in een haast spirituele dimensie.  
