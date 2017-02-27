@@ -1,5 +1,6 @@
-## The Overview Effect. Over leven op een blauwe bol en een nieuwe institutie.
-<link href="file:///Users/Elias/Documents/CSS/bw.css" rel="stylesheet"></link>
+## The Overview Effect
+### Over leven op een blauwe bol en een nieuwe institutie
+<link href="file:///Users/Elias/Documents/CSS/bw.css" rel="stylesheet">
 
 Inspiratie en aantekeningen bij de documentaire *The Overview* van Planetary Collective, online op [vimeo.com](vimeo.com/55073825), 19 min.  
     
