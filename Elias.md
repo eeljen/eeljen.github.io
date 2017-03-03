@@ -1,5 +1,5 @@
 # Norbert Elias
-<link href="file:///Users/Elias/Documents/CSS/bw.css" rel="stylesheet"></link>
+<link href="file:///Users/Elias/Documents/CSS/bw.css" rel="stylesheet">
 
 ° Breslau 1897 — † Amsterdam 1990
 
